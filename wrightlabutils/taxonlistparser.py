@@ -4,12 +4,15 @@ import argparse
 
 
 def parse_dataframe(df):
-    '''Retrieve a taxon list from a dataframe'''
+    '''Retrieve a taxon list from a dataframe.
+    Provide as input a path to a TSV or CSV-formatted dataframe.
+    Must contain one column labeled "taxon"
+    '''
     if df.endswith('.tsv'):
         df = pd.read_csv(df, delimiter="\t")
     elif df.endswith('.csv'):
         df = pd.read_csv(df)
-    tax_list= df[['taxon','max']]
+    tax_list= df[['taxon']]
     return(tax_list)
 
 def parse_morphology(morph_mat):
