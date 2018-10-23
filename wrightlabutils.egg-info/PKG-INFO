@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: wrightlabutils
+Version: 0.1
+Summary: Various Utilities for the wright lab
+Home-page: TBD
+Author: April Wright
+Author-email: april.wright@selu.edu
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # README
+        
+        A package of utilities for the Wright lab. Students can clone and use these.
+Platform: UNKNOWN
